@@ -6,7 +6,7 @@ import json
 key_dict = json.loads(st.secrets["textkey"])
 creds = service_account.Credentials.from_service_account_info(key_dict)
 print(key_dict)
-db = firestore.Client(credentials=creds, project="tienda-virtual")
+db = firestore.Client(credentials=creds, project="tienda-virtual-9d70a")
 product_ref = db.collection("productos")
 
 # Campos de producto
